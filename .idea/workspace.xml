@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b630cba2-aeb8-4503-ba33-0c896513e0fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/controllers/UserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/controllers/UserController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
   "keyToString": {
     "Kotlin.ApiAccountManagementApplicationKt.executor": "Run",
     "Kotlin.ApiDiscoveryServiceApplicationKt.executor": "Run",
-    "Kotlin.ApiGatewayApplicationKt.executor": "Debug",
+    "Kotlin.ApiGatewayApplicationKt.executor": "Run",
     "Kotlin.ApiUserApplicationKt.executor": "Run",
     "Kotlin.PhotoAppApiUsersApplicationKt.executor": "Run",
     "Kotlin.PhotoAppDiscoveryServiceApplicationKt.executor": "Run",
