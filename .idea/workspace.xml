@@ -5,16 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b630cba2-aeb8-4503-ba33-0c896513e0fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/kotlin/com/ricky/photoapp/api/users/controllers/UserController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PhotoAppDiscoveryService.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/kotlin/com/ricky/photoapp/api/users/PhotoAppApiUsersApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/kotlin/com/ricky/photoapp/api/users/PhotoAppApiUsersApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiAccountManagement/src/main/kotlin/com/ricky/api/account/controllers/AccountController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiDiscoveryService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/controllers/UserController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/microservices.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/kotlin/com/ricky/photoapp/api/users/PhotoAppApiUsersApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/kotlin/com/ricky/photoapp/api/users/controllers/UserController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/src/test/kotlin/com/ricky/photoapp/api/users/PhotoAppApiUsersApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/src/main/kotlin/com/ricky/photoapp/discovery/PhotoAppDiscoveryServiceApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppDiscoveryService/src/test/kotlin/com/ricky/photoapp/discovery/PhotoAppDiscoveryServiceApplicationTests.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +44,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ApiDiscoveryService/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,34 +64,65 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Kotlin.ApiAccountManagementApplicationKt.executor": "Run",
+    "Kotlin.ApiDiscoveryServiceApplicationKt.executor": "Run",
+    "Kotlin.ApiGatewayApplicationKt.executor": "Debug",
+    "Kotlin.ApiUserApplicationKt.executor": "Run",
     "Kotlin.PhotoAppApiUsersApplicationKt.executor": "Run",
     "Kotlin.PhotoAppDiscoveryServiceApplicationKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/code/programacao/java/microservices/microservices/PhotoAppApiUsers"
+    "last_opened_file_path": "C:/code/programacao/java/microservices/microservices/ApiUser",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.PhotoAppApiUsersApplicationKt">
-    <configuration name="PhotoAppApiUsersApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.photoapp.api.users.PhotoAppApiUsersApplicationKt" />
-      <module name="PhotoAppApiUsers" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\programacao\java\microservices\microservices\ApiUser\src\main\kotlin\com\ricky\api\user" />
+      <recent name="C:\code\programacao\java\microservices\microservices\ApiDiscoveryService\src\main\resources" />
+      <recent name="C:\code\programacao\java\microservices\microservices\ApiUser\src\main\resources" />
+      <recent name="C:\code\programacao\java\microservices\microservices\ApiAccountManagement\src\main\kotlin\com\ricky\api\account" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.ApiUserApplicationKt">
+    <configuration name="ApiAccountManagementApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ricky.api.account.ApiAccountManagementApplicationKt" />
+      <module name="ApiAccountManagement" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhotoAppDiscoveryServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.photoapp.discovery.PhotoAppDiscoveryServiceApplicationKt" />
-      <module name="PhotoAppDiscoveryService" />
+    <configuration name="ApiDiscoveryServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ricky.api.discovery.service.ApiDiscoveryServiceApplicationKt" />
+      <module name="ApiDiscoveryService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ricky.api.gateway.ApiGatewayApplicationKt" />
+      <module name="ApiGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiUserApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ricky.api.user.ApiUserApplicationKt" />
+      <module name="ApiUser" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.PhotoAppApiUsersApplicationKt" />
-        <item itemvalue="Kotlin.PhotoAppDiscoveryServiceApplicationKt" />
+        <item itemvalue="Kotlin.ApiUserApplicationKt" />
+        <item itemvalue="Kotlin.ApiGatewayApplicationKt" />
+        <item itemvalue="Kotlin.ApiDiscoveryServiceApplicationKt" />
+        <item itemvalue="Kotlin.ApiAccountManagementApplicationKt" />
       </list>
     </recent_temporary>
   </component>

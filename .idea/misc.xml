@@ -6,6 +6,10 @@
       <list>
         <option value="$PROJECT_DIR$/PhotoAppApiUsers/pom.xml" />
         <option value="$PROJECT_DIR$/PhotoAppDiscoveryService/pom.xml" />
+        <option value="$PROJECT_DIR$/ApiAccountManagement/pom.xml" />
+        <option value="$PROJECT_DIR$/ApiGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/ApiUser/pom.xml" />
+        <option value="$PROJECT_DIR$/ApiDiscoveryService/pom.xml" />
       </list>
     </option>
   </component>

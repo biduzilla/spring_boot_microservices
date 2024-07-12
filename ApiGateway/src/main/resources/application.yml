@@ -1,0 +1,33 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: users-status-check
+          uri: lb://users-ws
+          predicates:
+            - Path=/users/status/check
+            - Method=GET
+          filters:
+            - RemoveRequestHeader=Cookie
+
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+  application:
+    name: api-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+
+server:
+  port: 8082
+
+logging:
+  level:
+    ROOT: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web: DEBUG
