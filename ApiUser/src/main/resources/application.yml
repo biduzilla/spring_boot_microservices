@@ -10,10 +10,10 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8010/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
 
 server:
-  port: 0
+  port: ${PORT:0}
 
-logging:
-  level:
-    ROOT: DEBUG
