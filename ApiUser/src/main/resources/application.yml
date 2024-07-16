@@ -6,11 +6,11 @@ spring:
       enabled: true
   h2:
     console:
-      enable: true
+      enabled: true
       settings:
         web-allow-others: true
   datasource:
-    driverClassName: org.h2.Driver
+    driver-class-name: org.h2.Driver
     password: toddy
     url: jdbc:h2:mem:testdb
     username: toddy
@@ -18,7 +18,6 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
-
 
 eureka:
   client:
