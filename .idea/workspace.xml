@@ -5,14 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b630cba2-aeb8-4503-ba33-0c896513e0fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/data/UserEntity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/dto/UserDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/models/CreateUserRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/models/CreateUserResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/repository/UserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/service/UserService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/service/impl/UserServiceImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiUser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/controllers/UserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/controllers/UserController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiUser/src/test/kotlin/com/ricky/api/user/ApiUserApplicationTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/test/kotlin/com/ricky/api/user/ApiCreateUserApplicationTestsRequest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,8 +76,11 @@
       <recent name="C:\code\programacao\java\microservices\microservices\ApiUser\src\main\resources" />
       <recent name="C:\code\programacao\java\microservices\microservices\ApiAccountManagement\src\main\kotlin\com\ricky\api\account" />
     </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.ricky.api.user.models" />
+    </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ApiGatewayApplicationKt">
+  <component name="RunManager" selected="Kotlin.ApiUserApplicationKt">
     <configuration name="ApiAccountManagementApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ricky.api.account.ApiAccountManagementApplicationKt" />
       <module name="ApiAccountManagement" />
@@ -91,8 +111,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.ApiGatewayApplicationKt" />
         <item itemvalue="Kotlin.ApiUserApplicationKt" />
+        <item itemvalue="Kotlin.ApiGatewayApplicationKt" />
         <item itemvalue="Kotlin.ApiDiscoveryServiceApplicationKt" />
         <item itemvalue="Kotlin.ApiAccountManagementApplicationKt" />
       </list>
