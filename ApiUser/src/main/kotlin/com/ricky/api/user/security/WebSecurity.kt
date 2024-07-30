@@ -3,6 +3,7 @@ package com.ricky.api.user.security
 import com.ricky.api.user.service.UserService
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.context.annotation.Lazy
 import org.springframework.core.env.Environment
 import org.springframework.http.HttpMethod
 import org.springframework.security.authentication.AuthenticationManager
@@ -19,8 +20,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher
 @EnableWebSecurity
 class WebSecurity(
     private val environment: Environment,
-    private val userService: UserService,
-    private val bCryptPasswordEncoder: BCryptPasswordEncoder
+    @Lazy private val userService: UserService,
 ) {
 
     @Bean
@@ -33,9 +33,16 @@ class WebSecurity(
         val authenticationManagerBuilder: AuthenticationManagerBuilder =
             http.getSharedObject(AuthenticationManagerBuilder::class.java)
 
-        authenticationManagerBuilder.userDetailsService(userService).passwordEncoder(bCryptPasswordEncoder)
+        authenticationManagerBuilder.userDetailsService(userService).passwordEncoder(bCryptPasswordEncoder())
 
         val authenticationManager: AuthenticationManager = authenticationManagerBuilder.build()
+
+        val authenticationFilter = AuthenticationFilter(
+            authenticationManager = authenticationManager,
+            userService = userService,
+            environment = environment
+        )
+        authenticationFilter.setFilterProcessesUrl(environment.getProperty("login.url.path"))
 
         http.csrf {
             it.disable()
@@ -50,11 +57,7 @@ class WebSecurity(
         }.sessionManagement {
             it?.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         }.addFilter(
-            AuthenticationFilter(
-                authenticationManager = authenticationManager,
-                userService = userService,
-                environment = environment
-            )
+            authenticationFilter
         )
             .authenticationManager(authenticationManager)
 

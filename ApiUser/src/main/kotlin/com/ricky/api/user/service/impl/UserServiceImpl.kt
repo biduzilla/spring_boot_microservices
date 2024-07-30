@@ -7,6 +7,7 @@ import com.ricky.api.user.service.UserService
 import org.modelmapper.ModelMapper
 import org.modelmapper.convention.MatchingStrategies
 import org.springframework.beans.BeanUtils
+import org.springframework.context.annotation.Lazy
 import org.springframework.security.core.userdetails.User
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UsernameNotFoundException
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Service
 @Service
 class UserServiceImpl(
     private val userRepository: UserRepository,
-    private val bCryptPasswordEncoder: BCryptPasswordEncoder
+    @Lazy private val bCryptPasswordEncoder: BCryptPasswordEncoder
 ) : UserService {
     override fun createUser(userDTO: UserDTO): UserDTO {
         val user: UserEntity = UserEntity()
@@ -32,7 +33,7 @@ class UserServiceImpl(
     }
 
     override fun getUserDetailsByEmail(email: String): UserDTO {
-        val user = userRepository.findByUserEmail(email)
+        val user = userRepository.findByEmail(email)
             .orElseThrow { UsernameNotFoundException("User not found with email: $email") }
 
         val userDTO: UserDTO = UserDTO()
@@ -46,7 +47,7 @@ class UserServiceImpl(
             throw UsernameNotFoundException("Username must not be null or empty")
         }
 
-        val user = userRepository.findByUserEmail(username)
+        val user = userRepository.findByEmail(username)
             .orElseThrow { UsernameNotFoundException("User not found with email: $username") }
 
         return User(

@@ -6,5 +6,5 @@ import java.util.Optional
 
 interface UserRepository : CrudRepository<UserEntity, Long> {
 
-    fun findByUserEmail(email: String): Optional<UserEntity>
+    fun findByEmail(email: String): Optional<UserEntity>
 }
