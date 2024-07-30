@@ -31,3 +31,9 @@ eureka:
 server:
   port: ${PORT:0}
 
+gateway:
+  ip: 192.168.0.13
+token:
+  expiration_time: 3600000
+  secret: WFhyYZU2f0G2a39
+
