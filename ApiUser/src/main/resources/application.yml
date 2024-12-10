@@ -32,7 +32,7 @@ server:
   port: ${PORT:0}
 
 gateway:
-  ip: 192.168.0.13
+  ip: 192.168.0.16
 
 token:
   expiration_time: 3600000

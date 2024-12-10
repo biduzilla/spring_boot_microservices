@@ -4,12 +4,10 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.ricky.api.user.models.LoginRequest
 import com.ricky.api.user.service.UserService
 import io.jsonwebtoken.Jwts
-import io.jsonwebtoken.SignatureAlgorithm
 import io.jsonwebtoken.security.Keys
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
-import org.springframework.beans.factory.annotation.Value
 import org.springframework.core.env.Environment
 import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
@@ -18,10 +16,8 @@ import org.springframework.security.core.userdetails.User
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 import java.io.IOException
 import java.nio.charset.StandardCharsets
-import java.security.Key
 import java.time.Instant
 import java.util.*
-import javax.crypto.spec.SecretKeySpec
 
 
 class AuthenticationFilter(

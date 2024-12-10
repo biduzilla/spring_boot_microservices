@@ -20,6 +20,14 @@ spring:
             - RemoveRequestHeader=Cookie
             - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
 
+        - id: users-ws
+          uri: lb://users-ws
+          predicates:
+            - Path=/users-ws/**
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/users-ws/(?<segment>.*), /${segment}
+
         - id: users-ws-login
           uri: lb://users-ws
           predicates:

@@ -52,7 +52,9 @@ class WebSecurity(
             }
         }.authorizeHttpRequests { authorize ->
             authorize
-                .requestMatchers(HttpMethod.POST, "/users").permitAll()
+//                .requestMatchers(HttpMethod.POST, "/users").permitAll()
+                .requestMatchers( "/users/**").permitAll()
+                .requestMatchers( "/users").permitAll()
                 ?.requestMatchers(AntPathRequestMatcher("/h2-console/**"))?.permitAll()
         }.sessionManagement {
             it?.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
