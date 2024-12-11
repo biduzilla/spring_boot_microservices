@@ -71,6 +71,5 @@ class AuthenticationFilter(
         }catch (e:Exception){
             e.printStackTrace()
         }
-
     }
 }

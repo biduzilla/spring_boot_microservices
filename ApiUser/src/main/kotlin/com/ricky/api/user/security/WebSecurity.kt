@@ -29,7 +29,7 @@ class WebSecurity(
     }
 
     @Bean
-    fun configure(http: HttpSecurity): SecurityFilterChain {
+    protected fun configure(http: HttpSecurity): SecurityFilterChain {
         val authenticationManagerBuilder: AuthenticationManagerBuilder =
             http.getSharedObject(AuthenticationManagerBuilder::class.java)
 
@@ -52,9 +52,9 @@ class WebSecurity(
             }
         }.authorizeHttpRequests { authorize ->
             authorize
-//                .requestMatchers(HttpMethod.POST, "/users").permitAll()
-                .requestMatchers( "/users/**").permitAll()
-                .requestMatchers( "/users").permitAll()
+                .requestMatchers(HttpMethod.POST, "/users").permitAll()
+//                .requestMatchers( "/users/**").permitAll()
+//                .requestMatchers( "/users").permitAll()
                 ?.requestMatchers(AntPathRequestMatcher("/h2-console/**"))?.permitAll()
         }.sessionManagement {
             it?.sessionCreationPolicy(SessionCreationPolicy.STATELESS)

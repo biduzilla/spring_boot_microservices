@@ -30,7 +30,7 @@ class UserController(private val env: Environment, private val userService: User
     }
 
     @PostMapping
-    fun createUser(@RequestBody createUserRequest: CreateUserRequest): ResponseEntity<CreateUserResponse> {
+    fun createUser(@RequestBody @Valid createUserRequest: CreateUserRequest): ResponseEntity<CreateUserResponse> {
         val modelMapper = ModelMapper()
         modelMapper.configuration.setMatchingStrategy(MatchingStrategies.STRICT)
         val userDTO = modelMapper.map(createUserRequest, UserDTO::class.java)
