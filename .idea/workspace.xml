@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b630cba2-aeb8-4503-ba33-0c896513e0fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/dto/ErrorView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/exception/ExceptionHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/kotlin/com/ricky/api/gateway/security/AuthorizationHeaderFilter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/controllers/UserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/controllers/UserController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/dto/UserDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/dto/UserDTO.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/models/CreateUserRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/models/CreateUserRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/security/AuthenticationFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/security/AuthenticationFilter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/models/CreateUserResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/models/CreateUserResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/repository/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/repository/UserRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/security/WebSecurity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/security/WebSecurity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/service/impl/UserServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ApiUser/src/main/kotlin/com/ricky/api/user/service/impl/UserServiceImpl.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

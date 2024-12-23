@@ -1,7 +1,7 @@
 package com.ricky.api.user.dto
 
 import java.io.Serializable
-import java.util.UUID
+import java.util.*
 
 data class UserDTO(
     var userId: String = UUID.randomUUID().toString(),

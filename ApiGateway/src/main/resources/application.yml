@@ -24,6 +24,8 @@ spring:
           uri: lb://users-ws
           predicates:
             - Path=/users-ws/**
+            - Header=Authorization, Bearer (.*)
+            - AuthorizationHeaderFilter
           filters:
             - RemoveRequestHeader=Cookie
             - RewritePath=/users-ws/(?<segment>.*), /${segment}
@@ -47,6 +49,9 @@ eureka:
 
 server:
   port: 8082
+
+token:
+  secret: emUgZGEgYWJvYm9yYSB2YWkgdmlyIHBybyBjYXNhbWVudG8sIHBvZGUgdmly
 
 logging:
   level:

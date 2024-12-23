@@ -4,8 +4,6 @@ import com.ricky.api.user.data.UserEntity
 import com.ricky.api.user.dto.UserDTO
 import com.ricky.api.user.repository.UserRepository
 import com.ricky.api.user.service.UserService
-import org.modelmapper.ModelMapper
-import org.modelmapper.convention.MatchingStrategies
 import org.springframework.beans.BeanUtils
 import org.springframework.context.annotation.Lazy
 import org.springframework.security.core.userdetails.User
